@@ -34,9 +34,9 @@ function App() {
   const entryId = 'entryInput'
 
   return (
-    <div className="App w-full bg-slate-300 text-center p-16">
-      <div className="flex flex-row w-full space-x-16">
-        <div className="flex flex-col w-3/4">
+    <div className="App w-full bg-slate-300 text-center md:p-16">
+      <div className="flex flex-col md:flex-row w-full md:space-x-16">
+        <div className="flex flex-col md:w-3/4">
           <LabelWithImage
             imagePaths={textAreaImages}
             label="Enter text below:"
@@ -44,7 +44,7 @@ function App() {
           ></LabelWithImage>
           <SpellCheckTextArea text={text} setText={setText} id={entryId} />
         </div>
-        <div className="flex flex-col w-1/4">
+        <div className="flex flex-col ml-0 md:w-1/4">
           <LabelWithImage
             imagePaths={errorAreaImages}
             label="Try fixing these:"
