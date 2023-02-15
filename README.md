@@ -82,6 +82,8 @@ Once those are finished, there are multiple avenues for extending the app, all o
 2. add tutorials/ instructions in other languages. same reason as above
 3. simplify UI and provide a natural navigation to help users who cant understand the content/ are less tech experienced. weigh side by side vs errors below the text area.
 4. mobile views, and their usage. would it be the same? mobile usually is used for short blurbs or messaging, maybe we can redesign mobile to look like common messaging apps such as whatsapp, etc.
+5. redesign to be more of a "rich text editor" using either hidden textArea behind, or a div with contenteditable
+6. add hover suggestions
 
 ### development / maintainability extensions
 
@@ -98,6 +100,7 @@ Once those are finished, there are multiple avenues for extending the app, all o
 ### functionality extensions
 
 most of the functionality extensions are described by the user stories we left for later implementation.
+one key extension i would highlight though is using fuse.js as a way to suggest similar words.
 
 ## Resources used
 

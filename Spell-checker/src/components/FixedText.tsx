@@ -38,14 +38,14 @@ export default function FixedText({
   }
 
   return (
-    <div className="bg-white border-2 border-solid border-slate-200 rounded-xl h-full py-4">
+    <div className="bg-white border-2 border-solid border-slate-200 rounded-xl h-full py-4 flex flex-col justify-between">
       <ErrorList errors={errors} updateErrorWord={changeMispelledWord} />
       {!!errors.length && (
         <div className="w-full flex flex-row space-x-2 p-6">
           <button
             onClick={updateUserInput}
             id="updateText"
-            className="mt-4 bg-green-100 w-full"
+            className="mt-4 bg-green-200 w-full"
           >
             Update Text
           </button>
