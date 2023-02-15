@@ -3,7 +3,7 @@ import './App.css'
 import bird from './assets/img/birdpic.png'
 import typewriter from './assets/img/typewriter.png'
 import eraser from './assets/img/eraser.png'
-import LabelWithDefault from './components/LabelWithImage'
+import LabelWithImage from './components/LabelWithImage'
 import SpellCheckTextArea from './components/SpellCheckTextArea'
 import FixedText from './components/FixedText'
 
@@ -37,18 +37,18 @@ function App() {
     <div className="App w-full bg-slate-300 text-center p-16">
       <div className="flex flex-row w-full space-x-16">
         <div className="flex flex-col w-3/4">
-          <LabelWithDefault
+          <LabelWithImage
             imagePaths={textAreaImages}
             label="Enter text below:"
             id={entryId}
-          ></LabelWithDefault>
+          ></LabelWithImage>
           <SpellCheckTextArea text={text} setText={setText} id={entryId} />
         </div>
         <div className="flex flex-col w-1/4">
-          <LabelWithDefault
+          <LabelWithImage
             imagePaths={errorAreaImages}
             label="Try fixing these:"
-          ></LabelWithDefault>
+          ></LabelWithImage>
           <FixedText inputText={text} setInputWords={setText} />
         </div>
       </div>

@@ -1,8 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import ErrorList from './ErrorList'
 import SpellingMistake from '../models/SpellingMistake'
-import { findAllMistakes, ReplaceWords } from '../utils/text'
-import { isBasicWord } from '../utils/text'
+import { findAllMistakes, ReplaceWords, isBasicWord } from '../utils/text'
 
 export default function FixedText({
   inputText,
@@ -44,7 +43,7 @@ export default function FixedText({
       {!!errors.length && (
         <div className="w-full flex flex-row space-x-2 p-6">
           <button
-            onClick={() => updateUserInput()}
+            onClick={updateUserInput}
             id="updateText"
             className="mt-4 bg-green-100 w-full"
           >

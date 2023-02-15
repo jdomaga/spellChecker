@@ -14,7 +14,7 @@ export default function ErrorList({
         return (
           <li key={error.index}>
             <label htmlFor={`error-input-${errorNumber}`}>
-              error {errorNumber + 1} :
+              fix {errorNumber + 1} :
             </label>
             <input
               className={`border-solid border-b-2 border-b-solid border-${color}-200 `}
