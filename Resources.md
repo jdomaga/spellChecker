@@ -13,8 +13,12 @@ https://docs.cypress.io/guides/component-testing/react/quickstart
 Prettier setting:
 Overleaf public github!
 
+Words list:
+http://ogden.basic-english.org/words.html
+
+
 constraints:
 
 1. only BASIC english will be used
 2. any non-alphabetical character will signal the end of a "word"
-3.
+3. when autofilling, things like doubled punctuations, extra newlines, etc. can be cleaned up

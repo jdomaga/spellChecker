@@ -1,5 +1,11 @@
 # Jimmy Domagala Tang, Basic English spell checker
 
+## quick start:
+
+1. to launch the site locally, npm run dev
+2. to test the site, npm run test
+3. to run component tests, npm run test:components
+
 ## Brief: Make a spell checker for BASIC English
 
 Time allowed: 1 hour (outside of the interview time)
@@ -23,7 +29,7 @@ It is an interesting exercise to try to write out a complicated idea in simple E
 ## Base user stories:
 
 1. As a user, I want to be able to type multiple lines of text, so I can spell check my writing.
-2. As a sighted user, I want to be able to see errors visually within the text I have entered so I can see where to fix.
+2. As a sighted user, I want to be able to see errors visually in one simplified, ordered location so I can see what to fix.
 
 ## Important user stories, outside scope (fast-follows):
 
@@ -46,6 +52,8 @@ I found several constraints during development that I added in to lower scope fo
 1. only BASIC english will be used
 2. any non-alphabetical character will signal the end of a "word"
 3. when autofilling, things like doubled punctuations, extra newlines, etc. can be cleaned up
+
+Additionally, to lower scope we have only selected the base user stories as must haves, and will implement the others based on difficulty/ importance based on time left over (or as extensions).
 
 ## General implementation steps
 
